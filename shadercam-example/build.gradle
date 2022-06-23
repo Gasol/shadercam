@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 32
     buildToolsVersion '28.0.3'
 
     defaultConfig {
         applicationId "com.androidexperiments.shadercam.example"
         minSdkVersion 24
-        targetSdkVersion 28
+        targetSdkVersion 32
         versionCode 4
         versionName "2.0"
     }
@@ -26,7 +26,7 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    implementation 'androidx.appcompat:appcompat:1.0.0' //for theming
+    implementation 'androidx.appcompat:appcompat:1.4.2' //for theming
 
     implementation project(':shadercam')
     implementation 'com.uncorkedstudios.android:recordable-surfaceview:1.5.0'
